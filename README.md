@@ -1,3 +1,3 @@
 # The Root and Bowl
 
-Public GitHub Pages sales page and thank-you page for the digital cookbook. The paid PDF is kept out of this public repository; orders need a protected download service or manual email fulfillment.
+Public GitHub Pages sales and thank-you pages for the digital cookbook. The ebook PDF is currently in this public repository for testing, so anyone with its direct URL can access it. Use protected delivery before treating the file as buyer-only.
