@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f2e8">
+  <meta name="description" content="The Root and Bowl is a practical digital cookbook with 50 familiar recipes, flexible texture notes, shopping help, and thoughtful food-safety guidance for adults 55+.">
+  <title>The Root and Bowl — 50 Recipes for Everyday Digestive Comfort</title>
+  <style>
+    :root{--pine:#284539;--moss:#788b6a;--sage:#dde6d8;--cream:#f7f2e8;--paper:#fcfaf5;--terra:#c57858;--ink:#26312d;--muted:#596761;--line:#d9ded4;--white:#fff;--shadow:0 18px 50px rgba(40,69,57,.11)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.62 Arial,Helvetica,sans-serif}
+    a{color:inherit} img{max-width:100%;display:block} .wrap{width:min(1120px,calc(100% - 44px));margin:auto}
+    .bar{background:var(--pine);color:#fff;font-size:15px;text-align:center;padding:8px 16px;letter-spacing:.02em}
+    header{background:rgba(252,250,245,.96);border-bottom:1px solid var(--line)} .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:76px}
+    .brand{font:700 20px Georgia,serif;color:var(--pine);text-decoration:none;letter-spacing:.02em}.navlinks{display:flex;align-items:center;gap:24px}.navlinks a{font-size:16px;text-decoration:none;color:var(--pine)}
+    .hero{padding:62px 0 70px;background:radial-gradient(ellipse at 88% 35%,#eaf0e6 0,transparent 38%),var(--cream)}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:56px;align-items:center}
+    .eyebrow{color:var(--moss);font-size:14px;text-transform:uppercase;letter-spacing:.13em;font-weight:700;margin:0 0 13px} h1,h2,h3{font-family:Georgia,'Times New Roman',serif;color:var(--pine);line-height:1.13;margin:0} h1{font-size:clamp(40px,5.2vw,64px);letter-spacing:-.025em;max-width:700px} h2{font-size:clamp(32px,4vw,46px);letter-spacing:-.02em} h3{font-size:25px}
+    .lead{font-size:22px;line-height:1.48;max-width:650px;margin:22px 0 16px}.sublead{color:var(--muted);font-size:18px;max-width:610px;margin:0 0 26px}
+    .actions{display:flex;align-items:center;flex-wrap:wrap;gap:13px}.button{display:inline-flex;justify-content:center;align-items:center;text-align:center;min-height:58px;padding:14px 24px;border-radius:9px;border:2px solid var(--pine);background:var(--pine);color:#fff;text-decoration:none;font-size:18px;line-height:1.2;font-weight:700;box-shadow:0 5px 0 rgba(40,69,57,.13);transition:transform .15s,background .15s}.button:hover{background:#1e382c;transform:translateY(-1px)}.button.secondary{color:var(--pine);background:transparent;box-shadow:none}.fine{font-size:14px;line-height:1.45;color:var(--muted);margin:15px 0 0;max-width:620px}
+    .book{position:relative;max-width:500px;margin:auto;padding:14px;background:#fff;border:1px solid #ece6da;border-radius:18px;box-shadow:var(--shadow);transform:rotate(1.1deg)}.book img{width:100%;border-radius:10px}.book::after{content:"";position:absolute;z-index:-1;inset:18px -12px -13px 18px;background:#e8dfcc;border-radius:18px;transform:rotate(-3deg)}.book-caption{text-align:center;color:var(--muted);font-size:14px;margin:12px 0 0}
+    .proofbar{background:#fff;border-bottom:1px solid var(--line)}.proofgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;padding:21px 0}.proof{text-align:center;font-size:16px;color:var(--muted);padding:7px 10px}.proof strong{display:block;color:var(--pine);font:700 24px Georgia,serif}
+    section{padding:76px 0}.section-head{max-width:760px;margin:0 auto 38px;text-align:center}.section-head p{font-size:19px;color:var(--muted);margin:16px 0 0}.problem{background:var(--paper)}.problem-grid{display:grid;grid-template-columns:1fr 1fr;align-items:start;gap:46px}.problem-copy p{font-size:20px}.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px;box-shadow:0 8px 24px rgba(40,69,57,.05)}.checklist{list-style:none;margin:18px 0 0;padding:0}.checklist li{padding:12px 0 12px 36px;position:relative;border-bottom:1px solid #edf0eb}.checklist li:last-child{border:0}.checklist li::before{content:"✓";position:absolute;left:0;top:11px;color:var(--pine);font-size:21px;font-weight:700}
+    .included{background:var(--sage)}.featuregrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.feature{background:rgba(255,255,255,.83);padding:25px;border-radius:13px;border:1px solid rgba(40,69,57,.1)}.feature .num{font:700 15px Arial,sans-serif;color:var(--terra);letter-spacing:.08em}.feature h3{font-size:22px;margin:10px 0}.feature p{color:var(--muted);font-size:17px;margin:0}
+    .chapters{background:var(--paper)}.chapterlist{display:grid;grid-template-columns:1fr 1fr;gap:15px}.chapter{padding:21px 23px;background:#fff;border:1px solid var(--line);border-radius:11px}.chapter strong{display:block;color:var(--pine);font:700 20px Georgia,serif}.chapter span{display:block;color:var(--muted);font-size:16px;margin-top:4px}
+    .audience{background:#fff}.audgrid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.aud{border-radius:15px;padding:29px;background:var(--cream)}.aud.good{border-top:5px solid var(--moss)}.aud.limit{border-top:5px solid var(--terra)}.aud h3{margin-bottom:13px}.aud p{margin:8px 0;color:var(--muted)}
+    .offer{background:var(--pine);color:#fff}.offer h2,.offer h3{color:#fff}.offer .section-head p{color:#e1e9e3}.offer-card{max-width:770px;margin:auto;background:#fff;color:var(--ink);border-radius:16px;padding:35px 38px;box-shadow:0 18px 45px rgba(0,0,0,.16)}.offer-card h3{color:var(--pine);font-size:29px}.offer-card .checklist{margin-bottom:20px}.offer-card .checklist li{font-size:17px}.setup{background:var(--cream);border:1px solid #e8ddc6;padding:15px 17px;border-radius:9px;color:var(--muted);font-size:15px;margin:18px 0}.offer-card .button{width:100%;cursor:pointer}.offer-card .fine{text-align:center;margin-left:auto;margin-right:auto}
+    .faq{background:var(--paper)}.faqs{max-width:840px;margin:auto}.faqs details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px 21px;margin:12px 0}.faqs summary{font-size:19px;font-weight:700;color:var(--pine);cursor:pointer}.faqs details p{margin:14px 0 0;color:var(--muted)}
+    .closing{background:var(--cream);text-align:center}.closing p{font-size:20px;color:var(--muted);max-width:680px;margin:18px auto 26px}footer{background:#1e382c;color:#e7eee8;padding:32px 0;font-size:14px}.foot{display:flex;justify-content:space-between;gap:22px;align-items:flex-start}.foot a{color:#fff}.disclaimer{max-width:720px;margin:0}.copyright{white-space:nowrap;margin:0}
+    [hidden]{display:none!important}:focus-visible{outline:3px solid var(--terra);outline-offset:3px}
+    @media(max-width:820px){.hero-grid{grid-template-columns:1fr;gap:35px}.hero-copy{order:1}.book{order:2;width:min(100%,460px)}.featuregrid{grid-template-columns:1fr 1fr}.problem-grid{gap:24px}.navlinks{gap:14px}.navlinks>a{display:none}}
+    @media(max-width:600px){body{font-size:18px}.wrap{width:min(100% - 32px,1120px)}.bar{font-size:13px}.nav{min-height:68px}.brand{font-size:18px}.lang button{padding:8px 10px;font-size:14px}.hero{padding:43px 0 50px}h1{font-size:43px}.lead{font-size:21px}.sublead{font-size:17px}.actions{align-items:stretch;flex-direction:column}.button{width:100%}.proofgrid{grid-template-columns:1fr;gap:3px;padding:14px 0}.proof{padding:7px}.proof strong{font-size:21px}section{padding:58px 0}.section-head{margin-bottom:28px}.section-head p{font-size:18px}.problem-grid,.featuregrid,.chapterlist,.audgrid{grid-template-columns:1fr}.problem-copy p{font-size:19px}.feature{padding:21px}.offer-card{padding:26px 20px}.offer-card h3{font-size:26px}.foot{display:block}.copyright{margin-top:15px}.book{padding:9px}.book-caption{font-size:13px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="bar"><span data-en="A practical, illustrated cookbook for adults 55+"></span> · <span data-en="50 recipes + useful kitchen bonuses"></span></div>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top">THE ROOT AND BOWL</a>
+      <nav class="navlinks" aria-label="Main navigation"><a href="#inside" data-en="Inside the book"></a><a href="#faq" data-en="Questions"></a></nav>
+    </div>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-en="A calmer place to start in the kitchen"></p>
+          <h1 data-en="Stop piecing together scattered food tips. Put 50 practical recipes in one readable kitchen guide."></h1>
+          <p class="lead" data-en="Meet <em>The Root and Bowl</em>: familiar, thoughtfully explained recipes for everyday meals, with flexible texture notes, ingredient swaps, and clear safety reminders."></p>
+          <p class="sublead" data-en="One organized kitchen guide for older adults and the people who cook alongside them. No miracle claims. Just practical ideas you can review, adapt, and discuss with your care team."></p>
+          <div class="actions"><a class="button" href="#inside" data-en="See what’s inside the book"></a><a class="button secondary" href="#offer" data-en="View the digital offer"></a></div>
+          <p class="fine" data-en="Food ideas are not medical care. Individual needs, symptoms, and food tolerance differ."></p>
+        </div>
+        <figure class="book"><img src="assets/root-and-bowl-book-mockup.jpg" alt="Cover of The Root and Bowl, a 50-recipe kitchen guide for adults 55+"><figcaption class="book-caption" data-en="A warm, readable guide made for real home kitchens."></figcaption></figure>
+      </div>
+    </section>
+    <div class="proofbar"><div class="wrap proofgrid"><div class="proof"><strong>50</strong><span data-en="step-by-step recipes"></span></div><div class="proof"><strong>5</strong><span data-en="organized recipe chapters"></span></div><div class="proof"><strong>6</strong><span data-en="practical companion tools"></span></div></div></div>
+    <section class="problem">
+      <div class="wrap problem-grid">
+        <div class="problem-copy"><p class="eyebrow" data-en="A familiar frustration"></p><h2 data-en="Scattered tips leave you asking: “So what can I actually cook?”"></h2><p data-en="A list of foods from a short video rarely tells you what to make, how to adjust the texture, or what to check before serving it. And one person’s comfortable meal may not suit someone else."></p><p data-en="This book brings recipes and practical notes together, so you can browse by meal style, ingredients, and texture instead of trying to piece together advice from separate posts."></p></div>
+        <div class="card"><h3 data-en="A useful guide for the next meal"></h3><ul class="checklist"><li data-en="Clear ingredients, servings, and cooking times"></li><li data-en="Plain-language steps with familiar kitchen tools"></li><li data-en="Texture ideas and optional ingredient swaps"></li><li data-en="Safety reminders, allergen notes, and questions to take to a clinician"></li></ul></div>
+      </div>
+    </section>
+    <section class="included" id="inside">
+      <div class="wrap"><div class="section-head"><p class="eyebrow" data-en="A complete kitchen companion"></p><h2 data-en="More than 50 recipes in a file."></h2><p data-en="The guide helps you find an idea, make it your own, and keep useful notes for your next conversation with a healthcare professional."></p></div>
+        <div class="featuregrid">
+          <article class="feature"><span class="num">01 / THE RECIPES</span><h3 data-en="50 familiar dishes"></h3><p data-en="Warm bowls, simple soups, soft sides, cooked fruit, and home-cooking ideas inspired by several food traditions."></p></article>
+          <article class="feature"><span class="num">02 / THE DETAILS</span><h3 data-en="Helpful notes on every recipe"></h3><p data-en="Prep and cook times, servings, step-by-step directions, texture options, and practical ingredient reminders."></p></article>
+          <article class="feature"><span class="num">03 / FIND YOUR START</span><h3 data-en="A recipe finder"></h3><p data-en="Browse by meal style, ingredients, soft-cooked foods, and shorter hands-on preparation."></p></article>
+          <article class="feature"><span class="num">04 / PLAN YOUR KITCHEN</span><h3 data-en="Flexible meal pairings"></h3><p data-en="Seven sample pairings to spark ideas. They are examples, not a prescribed meal plan."></p></article>
+          <article class="feature"><span class="num">05 / SHOP SMARTER</span><h3 data-en="Shopping and substitution pages"></h3><p data-en="A shopping checklist and practical swaps, with reminders that substitutions can change flavor, texture, and nutrition."></p></article>
+          <article class="feature"><span class="num">06 / KEEP A RECORD</span><h3 data-en="A journal and appointment card"></h3><p data-en="Printable pages to note food and comfort patterns and to review medicines or supplements with a clinician or pharmacist."></p></article>
+        </div>
+      </div>
+    </section>
+    <section class="chapters"><div class="wrap"><div class="section-head"><p class="eyebrow" data-en="Explore the table of contents"></p><h2 data-en="Five chapters. Plenty of ways to begin."></h2></div>
+      <div class="chapterlist">
+        <div class="chapter"><strong data-en="01 · Warm bowls & familiar breakfasts"></strong><span data-en="Congee, oats, egg, rice, and more."></span></div>
+        <div class="chapter"><strong data-en="02 · Simple soups & soft suppers"></strong><span data-en="Soups, chowders, and easy-to-adapt suppers."></span></div>
+        <div class="chapter"><strong data-en="03 · Plant-forward comfort dishes"></strong><span data-en="Vegetables, beans, lentils, and grains."></span></div>
+        <div class="chapter"><strong data-en="04 · East Asian-inspired home cooking"></strong><span data-en="Rice porridge, tofu, noodles, and tender vegetables."></span></div>
+        <div class="chapter"><strong data-en="05 · Fruit, sides & small comforts"></strong><span data-en="Cooked fruit, warm drinks, and simple sides."></span></div>
+        <div class="chapter"><strong data-en="Plus · Practical pages to use again"></strong><span data-en="Recipe finder, flexible pairings, shopping list, swaps, journal, and medicine conversation card."></span></div>
+      </div>
+    </div></section>
+    <section class="audience"><div class="wrap"><div class="section-head"><p class="eyebrow" data-en="A clear fit matters"></p><h2 data-en="Is this guide right for you?"></h2></div>
+      <div class="audgrid"><div class="aud good"><h3 data-en="It may be a good fit if…"></h3><p data-en="You are an older adult, family caregiver, or home cook who wants more meal ideas in one readable place."></p><p data-en="You like familiar recipes, want options to consider, and are comfortable adapting them to your own preferences and professional advice."></p></div>
+        <div class="aud limit"><h3 data-en="This is not a fit if…"></h3><p data-en="You need diagnosis, treatment, a therapeutic diet, or individualized swallowing and allergy guidance."></p><p data-en="Digestive symptoms can have many causes. Persistent, sudden, severe, or concerning symptoms need medical advice. Follow any meal plan or texture instructions from your care team."></p></div></div>
+    </div></section>
+    <section class="offer" id="offer"><div class="wrap"><div class="section-head"><p class="eyebrow" style="color:#d5dfd1" data-en="Bring the ideas together"></p><h2 data-en="Make the next meal easier to plan."></h2><p data-en="Get the organized guide, browse at your own pace, and return to the recipes that suit your household."></p></div>
+      <div class="offer-card"><p class="eyebrow" data-en="THE DIGITAL COOKBOOK"></p><h3><em>The Root and Bowl</em></h3><p data-en="50 Traditional Recipes for Everyday Digestive Comfort"></p><ul class="checklist"><li data-en="The complete 50-recipe illustrated kitchen guide"></li><li data-en="Recipe finder, seven flexible meal pairings, and shopping checklist"></li><li data-en="Substitution guide, food-and-comfort journal, and medicine conversation card"></li><li data-en="Clear safety notes and reminders to follow individual medical guidance"></li></ul>
+        <div class="setup"><strong>Digital delivery:</strong> After checkout, the confirmation page explains delivery. The ebook will be sent to the email address entered at checkout. Save the PDF to your device for later use.</div>
+        <a class="button" href="https://buy.stripe.com/eVq3cx5JK44NcQd2Mw2B202">Get the digital cookbook — $9.90</a><p class="fine">Digital PDF; no printed book will be shipped. Checkout is processed securely by Stripe.</p>
+      </div>
+    </div></section>
+    <section id="faq" class="faq"><div class="wrap"><div class="section-head"><p class="eyebrow" data-en="Before you decide"></p><h2 data-en="A few important questions."></h2></div><div class="faqs">
+      <details><summary>How will I receive the ebook?</summary><p>After payment, Stripe will show a confirmation. We will send the PDF to the email address you entered at checkout. Stripe may also send a separate payment receipt.</p></details>
+      <details><summary>Is this a printed book?</summary><p>No. This is a digital PDF cookbook. Nothing will be shipped.</p></details>
+      <details><summary>Will these recipes treat constipation, reflux, or another condition?</summary><p data-en="No. This is a cooking guide, not a treatment or a promise of symptom relief. Causes and food tolerance differ. Discuss ongoing or concerning symptoms with a healthcare professional."></p></details>
+      <details><summary data-en="Are all the recipes soft or safe for swallowing difficulties?"></summary><p data-en="No. Texture suggestions are not swallowing-safety instructions. If you have chewing or swallowing difficulty, follow the specific plan from your clinician or speech-language pathologist."></p></details>
+      <details><summary data-en="Can I change ingredients or follow the seven-day pairings exactly?"></summary><p data-en="The pairings are examples, not a prescribed plan. Ingredient swaps may change texture, allergens, flavor, and nutrition. Follow your personal dietary guidance and check labels."></p></details>
+      <details><summary data-en="Does it recommend herbs or supplements?"></summary><p data-en="Herbs and spices appear in ordinary culinary amounts for flavor. The guide does not recommend concentrated extracts or supplement doses. Ask a clinician or pharmacist before starting supplements, especially if you take medicines."></p></details>
+    </div></div></section>
+    <section class="closing"><div class="wrap"><p class="eyebrow" data-en="A thoughtful place to begin"></p><h2 data-en="Keep good food ideas close at hand."></h2><p data-en="A readable cookbook. Familiar ingredients. Flexible recipes and clear limits. Explore The Root and Bowl when you are ready."></p><a class="button" href="#offer" data-en="See the book and offer"></a></div></section>
+  </main>
+  <footer><div class="wrap foot"><p class="disclaimer" data-en="Educational cooking content only; not medical advice, diagnosis, or treatment. Food tolerance, allergies, and medical needs vary. Consult a qualified healthcare professional about digestive symptoms and before changing your diet, medicines, or supplements. Follow professional instructions for swallowing safety and prescribed textures."></p><p class="copyright">© <span id="year"></span> The Root and Bowl</p></div></footer>
+  <script>
+    document.querySelectorAll('[data-en]').forEach(el=>{el.innerHTML=el.dataset.en;el.removeAttribute('data-en')});
+    document.documentElement.lang='en';document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
