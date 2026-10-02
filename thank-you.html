@@ -1,2 +1,44 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>Thank you — The Root and Bowl</title><style>body{margin:0;background:#f7f2e8;color:#26312d;font:18px/1.6 Arial,sans-serif;display:grid;min-height:100vh;place-items:center}.card{max-width:620px;margin:24px;padding:40px;background:#fff;border-radius:16px;box-shadow:0 18px 50px #28453920}h1{font:42px/1.15 Georgia,serif;color:#284539}.small{font-size:15px;color:#596761}a{color:#284539}</style></head><body><main class="card"><p>THE ROOT AND BOWL</p><h1>Thank you for your order.</h1><p>Your digital cookbook will be sent to the email address entered at checkout. Stripe may send your payment receipt separately. Please check your inbox and spam folder.</p><p class="small">This is a digital PDF; no printed book will be shipped. The recipe guide is educational cooking content, not medical advice, diagnosis, or treatment.</p><a href="/the-root-and-bowl/">Return to the book page</a></main></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Your ebook — The Root and Bowl</title>
+  <style>
+    :root{color-scheme:light}*{box-sizing:border-box}
+    body{margin:0;background:#f7f2e8;color:#26312d;font:18px/1.6 Arial,sans-serif;display:grid;min-height:100vh;place-items:center;padding:24px}
+    .card{width:min(100%,680px);padding:clamp(28px,6vw,52px);background:#fff;border-radius:18px;box-shadow:0 18px 50px #28453920;text-align:center}
+    .eyebrow{font-size:13px;letter-spacing:.16em;font-weight:700;color:#718278}
+    h1{margin:12px 0 16px;font:clamp(36px,7vw,48px)/1.12 Georgia,serif;color:#284539}
+    p{margin:12px 0}
+    .button{display:inline-flex;align-items:center;justify-content:center;min-height:64px;margin:20px 0 8px;padding:16px 30px;border:0;border-radius:10px;background:#284539;color:#fff;text-decoration:none;font-size:20px;font-weight:700;cursor:pointer;box-shadow:0 8px 20px #28453930}
+    .button:hover{background:#1e362b;transform:translateY(-1px)}
+    .small{font-size:14px;color:#596761}.return{display:inline-block;margin-top:16px;color:#284539}
+    button:focus-visible,a:focus-visible{outline:3px solid #bc8149;outline-offset:4px}
+  </style>
+</head>
+<body>
+  <main class="card">
+    <p class="eyebrow">THE ROOT AND BOWL</p>
+    <h1>Thank you for your order!</h1>
+    <p>Your ebook is ready. Select the button below to open it in a new tab and start downloading a copy.</p>
+    <button class="button" id="ebook-button" type="button">Access your ebook now</button>
+    <p class="small">If the download does not start automatically, use the download icon in your PDF viewer. Stripe may send your payment receipt separately.</p>
+    <p class="small">This is a digital PDF; no printed book will be shipped. The recipe guide is educational cooking content, not medical advice, diagnosis, or treatment.</p>
+    <a class="return" href="/the-root-and-bowl/">Return to the book page</a>
+  </main>
+  <script>
+    const ebookUrl = "/the-root-and-bowl/The_Root_and_Bowl_50_Recipes.pdf";
+    document.getElementById("ebook-button").addEventListener("click", () => {
+      window.open(ebookUrl, "_blank", "noopener");
+      const download = document.createElement("a");
+      download.href = ebookUrl;
+      download.download = "The_Root_and_Bowl_50_Recipes.pdf";
+      document.body.appendChild(download);
+      download.click();
+      download.remove();
+    });
+  </script>
+</body>
+</html>
